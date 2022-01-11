@@ -1,0 +1,14 @@
+/* ============================ Google Fonts ========================== */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap");
+
+/* ============================ Custom Fonts ========================== */
+@font-face {
+    font-family: PlusJakartaSans-ExtraBold;
+    src: url(/assets/fonts/PlusJakartaDisplay-Bold.otf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: PlusJakartaSans-Bold;
+    src: url(/assets/fonts/PlusJakartaText-Bold.otf);
+    font-weight: 700;
+}
