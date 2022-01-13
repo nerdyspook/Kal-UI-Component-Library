@@ -183,9 +183,13 @@ body.dark-theme {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgba(12, 134, 233, 0.082);
+    background-color: rgba(203, 213, 225, 0.082);
     backdrop-filter: blur(10px);
     transition: 0.4s;
+}
+.dark-theme .nav__menu,
+.dark-theme .nav {
+    background-color: rgba(12, 134, 233, 0.082);
 }
 .show-menu {
     right: 0;
