@@ -21,10 +21,22 @@
     </head>
     <body>
         <!-- =========================== Header ========================== -->
-        <header class="header" id="header">
-            <nav class="nav container">
+        <header class="header container" id="header">
+            <nav class="nav">
                 <a href="#" class="nav__logo">Kal UI</a>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#documentaion" class="nav__link"
+                                >Documentation</a
+                            >
+                        </li>
+                    </ul>
+                </div>
                 <div class="nav__btns">
                     <i class="fab fa-github" id="github-btn"></i>
 
@@ -40,21 +52,9 @@
                     </div>
                 </div>
             </nav>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#documentaion" class="nav__link"
-                            >Documentation</a
-                        >
-                    </li>
-                </ul>
-            </div>
         </header>
         <!-- ============================ Main =========================== -->
-        <main class="main">
+        <main class="main container">
             <section class="home hero" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Kal UI</h1>
