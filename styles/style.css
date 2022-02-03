@@ -311,7 +311,6 @@ body.dark-theme {
 .start {
     color: var(--text-color);
     background-color: #cbd5e1;
-    border: 1px solid #64748b;
     border-radius: 0.4rem;
     outline: none;
 }
@@ -337,4 +336,56 @@ body.dark-theme {
         min-width: 15rem;
         padding: var(--mb-1);
     }
+}
+
+/* ====== Installation Section ======  */
+
+.installation,
+.installation__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.installation__data {
+    font-size: 1.125rem;
+    color: var(--text-color-light);
+    text-align: center;
+    line-height: 1.625rem;
+    margin: 2rem;
+}
+
+.installation__data h2 {
+    font-size: var(--biggest-font-size);
+    color: var(--title-color);
+    margin: 0rem 1rem 4rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .installation__data {
+        max-width: 40rem;
+    }
+}
+
+/* ===== Footer ===== */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #cbd5e1;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.footer h3,
+.footer .contact {
+    font-size: 1.5rem;
+}
+
+.contact i {
+    margin: 2rem 1rem;
+    color: var(--title-color);
 }
