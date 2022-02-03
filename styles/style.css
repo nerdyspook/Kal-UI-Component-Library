@@ -24,9 +24,9 @@
     /* ========== Colors =========== */
     --primary-color: #0ea5e9;
     --primary-color-alt: #0369a1;
-    --title-color: #282525;
+    --title-color: #2d3748;
     --text-color: #222833;
-    --text-color-light: #29303d;
+    --text-color-light: #718096;
     --body-color: #f8fafc;
     --container-color: #fafaf9;
 
@@ -258,6 +258,7 @@ body.dark-theme {
 
 /* ========= Hero Section ========== */
 .hero {
+    margin-top: 10rem;
     height: 90vh;
 }
 
@@ -272,47 +273,38 @@ body.dark-theme {
 .home__title {
     font-size: 6rem;
     font-weight: var(--font-extra-bold);
-
-    background: url(/assets/images/stars2.jpg);
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0.08);
-    animation: zoomout 10s ease 500ms forwards;
+    color: var(--title-color);
 }
 .dark-theme .home__title {
     color: var(--title-color);
 }
-@keyframes zoomout {
-    from {
-        background-size: 100%;
-    }
-    to {
-        background-size: 50%;
-    }
-}
 
 .home__description {
+    font-size: 1.125rem;
+    color: var(--text-color-light);
     text-align: center;
-    margin: 1rem;
+    line-height: 1.625rem;
+    margin: 2rem;
 }
 
-.cta {
+.cta,
+.start {
     font-weight: 500;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     background-color: var(--primary-color);
     color: var(--body-color);
 
     text-align: center;
     width: 90%;
-    padding: var(--mb-0-5);
+    padding: var(--mb-1-5);
     border-radius: 0.4rem;
     margin: var(--mb-1);
 }
 
 .start {
+    color: var(--text-color);
     background-color: #cbd5e1;
-
-    width: 90%;
-    padding: var(--mb-0-5);
     border: 1px solid #64748b;
     border-radius: 0.4rem;
     outline: none;
@@ -320,9 +312,4 @@ body.dark-theme {
 .dark-theme .start {
     color: var(--text-color);
     background-color: #334155;
-}
-
-.hero__img {
-    margin: auto;
-    width: 85%;
 }
