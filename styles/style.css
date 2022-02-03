@@ -189,12 +189,12 @@ body.dark-theme {
     width: 80%;
     height: 100vh;
     padding: 2rem;
-    background-color: rgba(203, 213, 225, 0.95);
+    background-color: rgba(167, 175, 187, 0.97);
     backdrop-filter: blur(15px);
     transition: 0.4s;
 }
 .dark-theme .nav__menu {
-    background-color: rgba(16, 37, 56, 0.925);
+    background-color: rgba(16, 37, 56, 0.99);
 }
 .dark-theme .nav {
     background-color: rgba(12, 134, 233, 0.082);
@@ -375,9 +375,12 @@ body.dark-theme {
     align-items: center;
     justify-content: center;
 
-    background-color: #cbd5e1;
+    background-color: #e2e8f0;
     padding: 1rem;
     margin-top: 5rem;
+}
+.dark-theme .footer {
+    background-color: var(--container-color);
 }
 
 .footer h3,
