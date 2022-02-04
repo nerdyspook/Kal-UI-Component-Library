@@ -1,0 +1,119 @@
+/* ========= Header ========= */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+
+    /* For animation to dark mode */
+    transition: 0.4s;
+}
+
+/* ======== Navbar ========= */
+.nav {
+    height: var(--header-height);
+    font-size: var(--h2-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+    font-family: "samarkan";
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    padding-left: 1rem;
+}
+
+.nav__btns,
+.nav__btns a {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__btns i {
+    padding-right: 2rem;
+    color: var(--title-color);
+}
+
+.nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: rgba(167, 175, 187, 0.97);
+    backdrop-filter: blur(15px);
+    transition: 0.4s;
+}
+.dark-theme .nav__menu {
+    background-color: rgba(16, 37, 56, 0.99);
+}
+.dark-theme .nav {
+    background-color: rgba(12, 134, 233, 0.082);
+    backdrop-filter: blur(15px);
+}
+.show-menu {
+    right: 0;
+}
+
+.nav__item {
+    margin-bottom: var(--mb-1);
+}
+
+.nav__item a {
+    color: var(--title-color);
+    font-family: var(--body-font);
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        background-color: rgba(255, 255, 255, 0.082);
+    }
+
+    .nav__close,
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__menu {
+        width: 70%;
+    }
+
+    .nav__menu,
+    .nav__list {
+        position: inherit;
+        height: var(--header-height);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+        background-color: transparent;
+    }
+    .nav__item a {
+        font-size: var(--normal-font-size);
+    }
+
+    .dark-theme .nav__menu,
+    .dark-theme .nav {
+        background-color: transparent;
+    }
+
+    .header {
+        margin-left: calc(50vw - 384px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        margin-left: calc(50vw - 512px);
+    }
+}

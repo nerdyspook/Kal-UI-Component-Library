@@ -1,0 +1,110 @@
+/* ========= Hero Section ========== */
+.hero {
+    margin-top: 9rem;
+    height: 90vh;
+}
+
+.home__data {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__title {
+    font-size: 6rem;
+    font-weight: var(--font-extra-bold);
+    color: var(--title-color);
+}
+.dark-theme .home__title {
+    color: var(--title-color);
+}
+
+.home__description {
+    font-size: 1.125rem;
+    color: var(--text-color-light);
+    text-align: center;
+    line-height: 1.625rem;
+    margin: 2rem;
+}
+
+.cta__btns {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.cta,
+.start {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    background-color: var(--primary-color);
+    color: var(--body-color);
+    text-align: center;
+
+    padding: var(--mb-1-5);
+    border-radius: 0.4rem;
+    margin: var(--mb-1);
+}
+
+.start {
+    color: var(--text-color);
+    background-color: #cbd5e1;
+    border-radius: 0.4rem;
+    outline: none;
+}
+.dark-theme .start {
+    color: var(--text-color);
+    background-color: #334155;
+}
+
+@media screen and (min-width: 768px) {
+    .home__description {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        max-width: 40rem;
+    }
+
+    .cta__btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cta,
+    .start {
+        font-size: 1.1875rem;
+        min-width: 15rem;
+        padding: var(--mb-1);
+    }
+}
+
+/* ====== Installation Section ======  */
+
+.installation,
+.installation__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.installation__data {
+    font-size: 1.125rem;
+    color: var(--text-color-light);
+    text-align: center;
+    line-height: 1.625rem;
+    margin: 2rem;
+}
+
+.installation__data h2 {
+    font-size: var(--biggest-font-size);
+    color: var(--title-color);
+    margin: 0rem 1rem 4rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .installation__data {
+        max-width: 40rem;
+    }
+}
