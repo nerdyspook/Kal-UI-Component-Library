@@ -23,9 +23,12 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.nav a {
+.nav__logo {
     font-family: "samarkan";
     font-size: var(--big-font-size);
+}
+
+.nav a {
     color: var(--title-color);
     padding-left: 1rem;
 }
@@ -49,10 +52,11 @@
     right: -100%;
     width: 80%;
     height: 100vh;
-    padding: 2rem;
+    padding: 1rem 1rem 4rem 1rem;
     background-color: rgba(167, 175, 187, 0.97);
     backdrop-filter: blur(15px);
     transition: 0.4s;
+    overflow: scroll;
 }
 .dark-theme .nav__menu {
     background-color: rgba(16, 37, 56, 0.99);
@@ -66,12 +70,20 @@
 }
 
 .nav__item {
-    margin-bottom: var(--mb-1);
+    margin: var(--mb-0-5) 0;
 }
 
 .nav__item a {
-    color: var(--title-color);
     font-family: var(--body-font);
+}
+
+.list-topic a {
+    font-family: "PlusJakartaSans-Bold";
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+}
+.list-subtopic a {
+    font-size: var(--normal-font-size);
 }
 
 @media screen and (min-width: 768px) {
@@ -86,6 +98,9 @@
 
     .nav__menu {
         width: 70%;
+        align-items: center;
+        transform: translateY(-0.4rem);
+        overflow: initial;
     }
 
     .nav__menu,
@@ -109,6 +124,9 @@
 
     .header {
         margin-left: calc(50vw - 384px);
+    }
+    .nested-list {
+        display: none;
     }
 }
 
