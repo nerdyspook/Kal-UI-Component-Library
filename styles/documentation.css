@@ -3,14 +3,14 @@
 
 /* ============== content ============= */
 .content {
-    margin: var(--mb-1);
+    margin: var(--sp-1);
     padding-top: 2rem;
 }
 
 .content-title,
 .content-head {
     color: var(--title-color);
-    margin: var(--mb-1) 0;
+    margin: var(--sp-1) 0;
 }
 
 .content-title {
@@ -30,7 +30,7 @@
 @media screen and (min-width: 768px) {
     .content {
         width: 73%;
-        margin: var(--mb-2-5);
+        margin: var(--sp-2-5);
         margin-left: calc(20% + 3rem);
         padding: 0.25rem;
     }
@@ -53,11 +53,11 @@
     color: var(--text-color);
     background-color: var(--secondary-color);
     padding: 1rem;
-    margin: var(--mb-1) 0;
+    margin: var(--sp-1) 0;
     border-radius: 0.4rem;
 }
 .example-container .divider {
-    margin: var(--mb-1) 0;
+    margin: var(--sp-1) 0;
 }
 .dark-theme .example-container,
 .dark-theme .examples-container {
@@ -95,7 +95,7 @@ iframe {
 .palette {
     display: flex;
     flex-wrap: wrap;
-    margin: var(--mb-1) 0;
+    margin: var(--sp-1) 0;
 }
 
 .palette > div {
