@@ -19,7 +19,8 @@
         ></script>
 
         <!-- ============================= CSS =========================== -->
-        <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/documentation.css" />
 
         <title>Kal UI</title>
     </head>
@@ -27,7 +28,6 @@
         <!-- =========================== Header ========================== -->
         <header class="header container" id="header">
             <nav class="nav">
-
                 <a href="/index.html" class="nav__logo">Kal UI</a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -36,8 +36,11 @@
                             <a href="/index.html" class="nav__link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="/pages/documentation.html"
-                               class="nav__link">Documentation</a>
+                            <a
+                                href="/pages/documentation.html"
+                                class="nav__link"
+                                >Documentation</a
+                            >
                         </li>
                     </ul>
 
@@ -117,7 +120,7 @@
                         </ul>
                     </div>
                 </div>
-              
+
                 <div class="nav__btns">
                     <a
                         href="https://github.com/nerdyspook/Kal-UI-Component-Library"
@@ -141,6 +144,86 @@
         </header>
 
         <!-- ============================ Main =========================== -->
+        <div class="main container">
+            <!-- ========================== Sidebar ========================== -->
+            <div class="sidebar hidden">
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="/"> Getting Started</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <a class="active" href="">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="">Colors</a>
+                        </li>
+                        <li>
+                            <a href="">Typography</a>
+                        </li>
+                        <li>
+                            <a href="">Conclusion</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ============= Components List ============ -->
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="">Components</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="">Alert</a>
+                        </li>
+                        <li>
+                            <a href="">Badge</a>
+                        </li>
+                        <li>
+                            <a href="">Button</a>
+                        </li>
+                        <li>
+                            <a href="">Card</a>
+                        </li>
+                        <li>
+                            <a href="">Image</a>
+                        </li>
+                        <li>
+                            <a href="">Input</a>
+                        </li>
+                        <li>
+                            <a href="">Text Utilities</a>
+                        </li>
+                        <li>
+                            <a href="">Lists</a>
+                        </li>
+                        <li>
+                            <a href="">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="">Modal</a>
+                        </li>
+                        <li>
+                            <a href="">Rating</a>
+                        </li>
+                        <li>
+                            <a href="">Toast</a>
+                        </li>
+                        <li>
+                            <a href="">Grid</a>
+                        </li>
+                        <li>
+                            <a href="">Slider</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- ======== MAIN JS ======== -->
         <script defer src="/scripts/main.js"></script>

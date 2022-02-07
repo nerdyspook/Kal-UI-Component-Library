@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+    .sidebar {
+        width: 20%;
+        display: block;
+        position: fixed;
+        margin-left: 1rem;
+        overflow: auto;
+    }
+
+    .list-topic {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid var(--text-color-light);
+    }
+
+    .list-subtopic li {
+        padding: 0.2rem 1rem;
+    }
+    .list-subtopic a {
+        color: var(--text-color-light);
+    }
+    .list-subtopic a.active,
+    .list-subtopic a:hover {
+        color: var(--text-color);
+        font-weight: var(--font-medium);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .list-subtopic li {
+        padding: 0.1rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        max-width: 12.5rem;
+    }
+}
