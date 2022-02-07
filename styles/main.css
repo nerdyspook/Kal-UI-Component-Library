@@ -44,9 +44,9 @@
     color: var(--body-color);
     text-align: center;
 
-    padding: var(--mb-1-5);
+    padding: var(--sp-1-5);
     border-radius: 0.4rem;
-    margin: var(--mb-1);
+    margin: var(--sp-1);
 }
 
 .start {
@@ -75,7 +75,7 @@
     .start {
         font-size: 1.1875rem;
         min-width: 15rem;
-        padding: var(--mb-1);
+        padding: var(--sp-1);
     }
 }
 
