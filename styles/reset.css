@@ -22,18 +22,26 @@
     --header-height: 3.5rem;
 
     /* ========== Colors =========== */
+    --default-color: #0f172a;
     --primary-color: #0ea5e9;
     --primary-color-alt: #0369a1;
+    --secondary-color: #cbd5e1;
     --title-color: #2d3748;
     --text-color: #222833;
+    --text-color-medium: #535d6d;
     --text-color-light: #718096;
     --body-color: #f8fafc;
     --container-color: #fafaf9;
+
+    --failure-color: #dc2626;
+    --success-color: #22c55e;
+    --warning-color: #fb923c;
 
     /* ======= Font & Typography ======= */
     --body-font: "IBM Plex Sans", sans-serif;
 
     --biggest-font-size: 3rem;
+    --bigger-font-size: 2.5rem;
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -129,14 +137,18 @@ button {
 }
 
 .divider {
-    border: 1px solid var(--text-color-light);
+    height: 1px;
+    width: 100%;
+    margin: 2rem 0;
     background-color: var(--text-color-light);
 }
 
 /* ====== Variable Dark Theme ====== */
 body.dark-theme {
+    --secondary-color-alt: #334155;
     --title-color: #f8fafc;
     --text-color: #cbd5e1;
+    --text-color-medium: #ecfeff;
 
     --body-color: #1a202c;
     --container-color: #181e29;

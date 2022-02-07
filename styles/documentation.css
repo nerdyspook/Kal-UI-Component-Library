@@ -1,2 +1,144 @@
 /* ============== Sidebar ============== */
 @import url(./sidebar.css);
+
+/* ============== content ============= */
+.content {
+    margin: var(--mb-1);
+    padding-top: 2rem;
+}
+
+.content-title,
+.content-head {
+    color: var(--title-color);
+    margin: var(--mb-1) 0;
+}
+
+.content-title {
+    font-family: "PlusJakartaSans-ExtraBold";
+    font-size: var(--bigger-font-size);
+}
+
+.content-head {
+    font-family: "PlusJakartaSans-ExtraBold";
+    font-size: var(--h1-font-size);
+}
+
+.content-details {
+    color: var(--text-color-medium);
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: 73%;
+        margin: var(--mb-2-5);
+        margin-left: calc(20% + 3rem);
+        padding: 0.25rem;
+    }
+    .content-title {
+        font-size: var(--big-font-size);
+    }
+    .content-head {
+        font-size: var(--h2-font-size);
+    }
+}
+
+.examples-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-container,
+.examples-container {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: var(--mb-1) 0;
+    border-radius: 0.4rem;
+}
+.example-container .divider {
+    margin: var(--mb-1) 0;
+}
+.dark-theme .example-container,
+.dark-theme .examples-container {
+    color: var(--text-color);
+    background-color: var(--secondary-color-alt);
+}
+
+.hidden-code {
+    color: var(--default-color);
+    background-color: #feebc8;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid #dd6b20;
+    border-radius: 0.4rem;
+}
+
+/* ================ Iframe =============== */
+iframe {
+    margin: 1rem auto;
+}
+.dark-theme iframe.dark {
+    display: block;
+}
+.dark-theme iframe {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    iframe {
+        display: none;
+    }
+}
+
+/* ================ Colors ================ */
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--mb-1) 0;
+}
+
+.palette > div {
+    width: 7.5rem;
+    height: 7.5rem;
+    color: #ffffff;
+
+    padding: 0.5rem;
+    font-size: var(--small-font-size);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.default {
+    background-color: var(--default-color);
+}
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.failure {
+    background-color: var(--failure-color);
+}
+.success {
+    background-color: var(--success-color);
+}
+.warning {
+    background-color: var(--warning-color);
+}
+
+/* ============== Navigation ============== */
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev,
+.next {
+    color: var(--text-color);
+    font-family: "PlusJakartaSans-Bold";
+}
