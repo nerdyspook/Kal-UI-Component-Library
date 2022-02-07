@@ -4,7 +4,7 @@
 /* ============== content ============= */
 .content {
     margin: var(--sp-1);
-    padding-top: 2rem;
+    padding-top: var(--sp-2);
 }
 
 .content-title,
@@ -32,7 +32,7 @@
         width: 73%;
         margin: var(--sp-2-5);
         margin-left: calc(20% + 3rem);
-        padding: 0.25rem;
+        padding: var(--sp-0-25);
     }
     .content-title {
         font-size: var(--big-font-size);
@@ -52,7 +52,7 @@
 .examples-container {
     color: var(--text-color);
     background-color: var(--secondary-color);
-    padding: 1rem;
+    padding: var(--sp-1);
     margin: var(--sp-1) 0;
     border-radius: 0.4rem;
 }
@@ -68,15 +68,15 @@
 .hidden-code {
     color: var(--default-color);
     background-color: #feebc8;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: var(--sp-1);
+    margin: var(--sp-1) 0;
     border-left: 4px solid #dd6b20;
     border-radius: 0.4rem;
 }
 
 /* ================ Iframe =============== */
 iframe {
-    margin: 1rem auto;
+    margin: var(--sp-1) auto;
 }
 .dark-theme iframe.dark {
     display: block;
@@ -104,7 +104,7 @@ iframe {
     height: 7.5rem;
     color: #ffffff;
 
-    padding: 0.5rem;
+    padding: var(--sp-0-5);
     font-size: var(--small-font-size);
 
     display: flex;
