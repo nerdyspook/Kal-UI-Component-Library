@@ -2,3 +2,8 @@
 @import url("../styles/navbar.css");
 @import url("../styles/main.css");
 @import url("../styles/footer.css");
+
+/* =========== Components =========== */
+@import url("../components/avatar/avatar.css");
+@import url("../components/alert/alert.css");
+@import url("../components/badge/badge.css");
