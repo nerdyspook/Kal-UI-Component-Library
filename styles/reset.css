@@ -57,7 +57,6 @@
     --font-bold: 700;
     --font-extra-bold: 800;
 
-
     /* ========= Spacing ======== */
 
     --sp-0-25: 0.25rem;
@@ -71,7 +70,6 @@
     --sp-4: 4rem;
     --sp-4-5: 4.5rem;
     --sp-5: 5rem;
-
 
     /* =========== Z Index ========== */
     --z-fixed: 100;
@@ -149,6 +147,10 @@ button {
     width: 100%;
     margin: 2rem 0;
     background-color: var(--text-color-light);
+}
+
+.rounded {
+    border-radius: 100%;
 }
 
 /* ====== Variable Dark Theme ====== */
