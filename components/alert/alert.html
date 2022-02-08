@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- =========================== Favicon ========================= -->
+        <link
+            rel="shortcut icon"
+            href="/assets/images/favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- ======================== Font Awesome ======================= -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ============================= CSS =========================== -->
+        <link rel="stylesheet" href="../../styles/style.css" />
+        <link rel="stylesheet" href="../../styles/documentation.css" />
+        <link rel="stylesheet" href="../alert/alert.css" />
+
+        <title>Kal UI</title>
+    </head>
+    <body>
+        <!-- =========================== Header ========================== -->
+        <header class="header container" id="header">
+            <nav class="nav">
+                <a href="/index.html" class="nav__logo">Kal UI</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="/pages/documentation.html"
+                                class="nav__link"
+                                >Documentation</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="nested-list">
+                        <div class="list-topic nav__item">
+                            <a href="/"> Getting Started</a>
+                        </div>
+
+                        <ul class="list-subtopic">
+                            <li>
+                                <a href="../../pages/documentation.html"
+                                    >Introduction</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../../pages/colors.html">Colors</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/typography.html"
+                                    >Typography</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../../pages/conclusion.html"
+                                    >Conclusion</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ============= Components List ============ -->
+                    <div class="nested-list">
+                        <div class="list-topic nav__item">
+                            <a href="">Components</a>
+                        </div>
+
+                        <ul class="list-subtopic">
+                            <li>
+                                <a href="./avatar.html">Avatar</a>
+                            </li>
+                            <li>
+                                <a class="active" href="./alert.html">Alert</a>
+                            </li>
+                            <li>
+                                <a href="">Badge</a>
+                            </li>
+                            <li>
+                                <a href="">Button</a>
+                            </li>
+                            <li>
+                                <a href="">Card</a>
+                            </li>
+                            <li>
+                                <a href="">Image</a>
+                            </li>
+                            <li>
+                                <a href="">Input</a>
+                            </li>
+                            <li>
+                                <a href="">Text Utilities</a>
+                            </li>
+                            <li>
+                                <a href="">Lists</a>
+                            </li>
+                            <li>
+                                <a href="">Navigation</a>
+                            </li>
+                            <li>
+                                <a href="">Modal</a>
+                            </li>
+                            <li>
+                                <a href="">Rating</a>
+                            </li>
+                            <li>
+                                <a href="">Toast</a>
+                            </li>
+                            <li>
+                                <a href="">Grid</a>
+                            </li>
+                            <li>
+                                <a href="">Slider</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <a
+                        href="https://github.com/nerdyspook/Kal-UI-Component-Library"
+                        target="_blank"
+                    >
+                        <i class="fab fa-github" id="github-btn"></i>
+                    </a>
+
+                    <!-- Theme change -->
+                    <i class="fas fa-moon change-theme" id="theme-btn"></i>
+
+                    <!-- Menu Buttons -->
+                    <div class="nav__close hidden" id="nav-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ============================ Main =========================== -->
+        <div class="main container">
+            <!-- ========================== Sidebar ========================== -->
+            <div class="sidebar hidden">
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="/"> Getting Started</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="../../pages/documentation.html"
+                                >Introduction</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../pages/colors.html">Colors</a>
+                        </li>
+                        <li>
+                            <a href="../../pages/typography.html">Typography</a>
+                        </li>
+                        <li>
+                            <a href="../../pages/conclusion.html">Conclusion</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ============= Components List ============ -->
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="">Components</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="./avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a class="active" href="./alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="">Badge</a>
+                        </li>
+                        <li>
+                            <a href="">Button</a>
+                        </li>
+                        <li>
+                            <a href="">Card</a>
+                        </li>
+                        <li>
+                            <a href="">Image</a>
+                        </li>
+                        <li>
+                            <a href="">Input</a>
+                        </li>
+                        <li>
+                            <a href="">Text Utilities</a>
+                        </li>
+                        <li>
+                            <a href="">Lists</a>
+                        </li>
+                        <li>
+                            <a href="">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="">Modal</a>
+                        </li>
+                        <li>
+                            <a href="">Rating</a>
+                        </li>
+                        <li>
+                            <a href="">Toast</a>
+                        </li>
+                        <li>
+                            <a href="">Grid</a>
+                        </li>
+                        <li>
+                            <a href="">Slider</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ===================== Content ==================== -->
+            <div class="content">
+                <div class="content-title">Alert</div>
+                <p class="content-details">
+                    An alert displays a short, important message in a way that
+                    attracts the user's attention without interrupting the
+                    user's task.
+                </p>
+
+                <ul class="hidden-code">
+                    <li>
+                        In order to view the code you need to visit using a
+                        device with larger screen.
+                    </li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <div class="content-head">Basic Alerts</div>
+                <p class="content-details">
+                    The alert offers five severity levels that set a distinctive
+                    icon and color. <br /><br />
+                    To use this alert just use class name
+                    <strong>alert</strong> and also add class according to alert
+                    type: <strong>alert primary</strong> |
+                    <strong> alert secondary</strong> |
+                    <strong>alert success</strong> |
+                    <strong>alert warning</strong> |
+                    <strong>alert failure</strong>. <br /><br />
+                    You can copy html part from below code snippet.
+                </p>
+
+                <div class="example-container">
+                    <div class="alert primary">
+                        <div class="icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <p class="info">
+                            This is a primary info alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                    </div>
+
+                    <div class="alert secondary">
+                        <div class="icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <p class="info">
+                            This is a secondary info alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                    </div>
+
+                    <div class="alert success">
+                        <div class="icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p class="info">
+                            This is a success alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                    </div>
+
+                    <div class="alert warning">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <p class="info">
+                            This is a warning alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                    </div>
+
+                    <div class="alert failure">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <p class="info">
+                            This is a failure alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                    </div>
+                </div>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520primary%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2509%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520primary%2520info%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520secondary%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520secondary%2520info%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520failure%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520failure%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 710px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    class="dark hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520primary%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2509%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520primary%2520info%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520secondary%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520secondary%2520info%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520failure%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520failure%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 710px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <div class="divider"></div>
+
+                <div class="content-head">Alert Actions</div>
+                <p class="content-details">
+                    An alert can have an action, such as a close or undo button.
+                    It is rendered after the message, at the end of the alert.
+                    <br /><br />
+                    If a class "close" is provided a cross will appear, but if a
+                    class "undo" is provided undo button will appear.
+                </p>
+
+                <div class="example-container">
+                    <div class="alert failure close" id="alert-close">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <p class="info">
+                            This is a failure alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                        <button type="button" class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="alert failure undo" id="alert-undo">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <p class="info">
+                            This is a failure alert —
+                            <a href="" class="text-link">check it out!</a>
+                        </p>
+                        <button type="button" class="close-btn">UNDO</button>
+                    </div>
+
+                    <div class="reset-btn" id="reset-btn">Reset Buttons</div>
+                </div>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520failure%2520close%2522%2520id%253D%2522alert-close%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520failure%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522close-btn%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520failure%2520undo%2522%2520id%253D%2522alert-undo%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520failure%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522close-btn%2522%253EUNDO%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 413px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    class="dark hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520failure%2520close%2522%2520id%253D%2522alert-close%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520failure%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522close-btn%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520failure%2520undo%2522%2520id%253D%2522alert-undo%2522%253E%250A%2509%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253EThis%2520is%2520a%2520failure%2520alert%2520%25E2%2580%2594%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-%2509%2509%2509link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522close-btn%2522%253EUNDO%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 413px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <!-- ======== Close Button JS Code Snippet ========= -->
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=javascript&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%252F**%2520%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%2520Close%2520Alert%2520%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%2520**%252F%250Aconst%2520closeBtn%2520%253D%2520document.querySelectorAll%28%2522.close-btn%2522%29%253B%250A%250AcloseBtn.forEach%28%28btn%29%2520%253D%253E%250A%2520%2520%2520%2520btn.addEventListener%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522click%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%28%29%2520%253D%253E%2520%28btn.parentElement.style.display%2520%253D%2520%2522none%2522%29%250A%2520%2520%2520%2520%29%250A%29%253B%250A"
+                    style="
+                        width: 700px;
+                        height: 285px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    class="dark hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=javascript&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%252F**%2520%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%2520Close%2520Alert%2520%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%253D%2520**%252F%250Aconst%2520closeBtn%2520%253D%2520document.querySelectorAll%28%2522.close-btn%2522%29%253B%250A%250AcloseBtn.forEach%28%28btn%29%2520%253D%253E%250A%2520%2520%2520%2520btn.addEventListener%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522click%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%28%29%2520%253D%253E%2520%28btn.parentElement.style.display%2520%253D%2520%2522none%2522%29%250A%2520%2520%2520%2520%29%250A%29%253B%250A"
+                    style="
+                        width: 700px;
+                        height: 285px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <div class="divider"></div>
+
+                <div class="nav-btns">
+                    <a href="../avatar/avatar.html" class="prev">&lt; Avatar</a>
+                    <a href="" class="next">Badge &gt;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= ALERT JS ======== -->
+        <script src="./alert.js"></script>
+
+        <!-- ======== MAIN JS ======== -->
+        <script defer src="/scripts/main.js"></script>
+    </body>
+</html>
