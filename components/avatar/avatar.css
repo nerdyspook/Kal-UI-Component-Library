@@ -1,7 +1,6 @@
 .avatar {
     height: var(--sp-4);
     width: var(--sp-4);
-    border-radius: 50%;
     margin: 0 var(--sp-1);
 }
 
