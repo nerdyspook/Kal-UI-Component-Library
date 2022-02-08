@@ -57,13 +57,21 @@
     --font-bold: 700;
     --font-extra-bold: 800;
 
-    /* ======= Margenes Bottom ======= */
+
+    /* ========= Spacing ======== */
+
     --sp-0-25: 0.25rem;
     --sp-0-5: 0.5rem;
     --sp-1: 1rem;
     --sp-1-5: 1.5rem;
     --sp-2: 2rem;
     --sp-2-5: 2.5rem;
+    --sp-3: 3rem;
+    --sp-3-5: 3.5rem;
+    --sp-4: 4rem;
+    --sp-4-5: 4.5rem;
+    --sp-5: 5rem;
+
 
     /* =========== Z Index ========== */
     --z-fixed: 100;

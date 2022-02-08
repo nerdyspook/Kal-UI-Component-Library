@@ -86,7 +86,8 @@ iframe {
 }
 
 @media screen and (max-width: 1020px) {
-    iframe {
+    iframe,
+    .dark-theme iframe.dark {
         display: none;
     }
 }
