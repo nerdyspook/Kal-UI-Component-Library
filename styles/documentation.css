@@ -44,12 +44,15 @@
 
 .examples-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .example-container,
 .examples-container {
+    position: relative;
+    min-height: var(--sp-5);
     color: var(--text-color);
     background-color: var(--secondary-color);
     padding: var(--sp-1);
