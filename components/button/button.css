@@ -1,0 +1,59 @@
+/* =========== Button ========== */
+
+.list-item {
+    list-style: disc;
+    margin-left: var(--sp-1);
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    padding: var(--sp-0-5) var(--sp-1);
+    margin: var(--sp-1);
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.btn-contained {
+    font-weight: var(--font-medium);
+    color: var(--white-color);
+}
+
+.btn-text {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-outlined {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn a {
+    color: var(--white-color);
+}
+
+.btn.left-icon i {
+    margin-right: var(--sp-0-5);
+}
+.btn.right-icon i {
+    margin-left: var(--sp-0-5);
+}
+
+.btn.btn-float-action {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: var(--sp-3);
+    width: var(--sp-3);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+.btn.btn-float-action i {
+    color: var(--white-color);
+}
