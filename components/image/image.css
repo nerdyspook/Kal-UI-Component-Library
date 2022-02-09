@@ -1,0 +1,22 @@
+/* =============== Image =============== */
+.resizable-div {
+    border: 1px solid var(--text-color-light);
+    display: block;
+    overflow: hidden;
+
+    resize: both;
+}
+
+.responsive-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.round-img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: var(--sp-1);
+}
