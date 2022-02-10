@@ -69,6 +69,10 @@
     .modal-details {
         font-size: var(--h3-font-size);
     }
+
+    .code-head {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
