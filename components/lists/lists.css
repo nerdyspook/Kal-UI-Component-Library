@@ -23,7 +23,7 @@ ul.list {
     padding-bottom: 0;
 }
 
-.list li ul li {
+.nested-list-item {
     color: var(--default-color);
     margin: var(--sp-0-5) var(--sp-1);
 }
