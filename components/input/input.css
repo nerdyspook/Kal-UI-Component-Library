@@ -1,0 +1,80 @@
+/* =============== Input =============== */
+.form {
+    width: 100%;
+    padding: var(--sp-1);
+    background-color: var(--white-color);
+    border-radius: 0.4rem;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: var(--sp-1);
+    padding-bottom: var(--sp-1);
+}
+
+.form-control label {
+    color: var(--default-color);
+    display: inline-block;
+    margin-bottom: var(--sp-0-25);
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    font-size: var(--small-font-size);
+    padding: var(--sp-0-5);
+    border: 2px solid var(--text-color-light);
+    border-radius: 0.25rem;
+}
+.form-control.form-success input {
+    border-color: var(--success-color);
+    outline: 2px var(--success-color);
+}
+.form-control.form-error input {
+    border-color: var(--failure-color);
+    outline: 2px var(--failure-color);
+}
+
+.form-control i {
+    position: absolute;
+    top: 2.15rem;
+    right: var(--sp-0-5);
+    visibility: hidden;
+}
+.form-control:last-of-type i {
+    right: var(--sp-2-5);
+}
+.form-control.form-success i.fa-check-circle {
+    color: var(--success-color);
+    visibility: visible;
+}
+.form-control.form-error i.fa-exclamation-circle {
+    color: var(--failure-color);
+    visibility: visible;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.form-error small {
+    color: var(--failure-color);
+    visibility: visible;
+}
+
+.form-radio label,
+.form-checkbox label {
+    margin-right: var(--sp-1);
+}
+.form-radio .disabled-option {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+    .form-control i {
+        top: 2.3rem;
+    }
+}
