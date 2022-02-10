@@ -21,7 +21,7 @@
         <!-- ============================= CSS =========================== -->
         <link rel="stylesheet" href="../../styles/style.css" />
         <link rel="stylesheet" href="../../styles/documentation.css" />
-        <link rel="stylesheet" href="./image.css" />
+        <link rel="stylesheet" href="./text-util.css" />
 
         <title>Kal UI</title>
     </head>
@@ -95,15 +95,13 @@
                                 <a href="../card/card.html">Card</a>
                             </li>
                             <li>
-                                <a class="active" href="./image.html">Image</a>
+                                <a href="../image/image.html">Image</a>
                             </li>
                             <li>
-                                <a href="../input/input.html">Input</a>
+                                <a  href="../input/input.html">Input</a>
                             </li>
                             <li>
-                                <a href="../text-utilities/text-util.html"
-                                    >Text Utilities</a
-                                >
+                                <a class="active" href="./text-util.html">Text Utilities</a>
                             </li>
                             <li>
                                 <a href="">Lists</a>
@@ -202,15 +200,13 @@
                             <a href="../card/card.html">Card</a>
                         </li>
                         <li>
-                            <a class="active" href="./image.html">Image</a>
+                            <a href="../image/image.html">Image</a>
                         </li>
                         <li>
-                            <a href="../input/input.html">Input</a>
+                            <a  href="../input/input.html">Input</a>
                         </li>
                         <li>
-                            <a href="../text-utilities/text-util.html"
-                                >Text Utilities</a
-                            >
+                            <a class="active" href="./text-util.html">Text Utilities</a>
                         </li>
                         <li>
                             <a href="">Lists</a>
@@ -239,11 +235,11 @@
 
             <!-- ===================== Content ==================== -->
             <div class="content">
-                <div class="content-title">Image</div>
+                <div class="content-title">Text Utilities</div>
                 <p class="content-details">
-                    The Image component is used to display images. <br /><br />
-                    Image composes a div where you can add all the styles you
-                    want.
+                    Inputs are necessary for user interaction with the website.
+                    Inputs are used to take information from the user, and then
+                    send the data to the server.
                 </p>
 
                 <ul class="hidden-code">
@@ -255,34 +251,35 @@
 
                 <div class="divider"></div>
 
-                <div class="content-head">Responsive Image</div>
+                <div class="content-head">Headings</div>
                 <p class="content-details">
-                    Responsive Image is the one that expands to cover the
-                    container it is present in. <br /><br />
-                    You can play with this using the resizable box given below.
-                    <br />
-                    (Change the size while clicking on the bottom-right corner
-                    of the image)
+                    All HTML headings, &lt;h1&gt; through &lt;h6&gt;, are
+                    available.
                 </p>
 
-                <div class="examples-container">
-                    <div class="resizable-div">
-                        <img
-                            class="responsive-img"
-                            src="../../assets/images/deku.jfif"
-                            alt="midoriya izuku image"
-                        />
-                    </div>
+                <div class="example-container">
+                    <h1>h1. Lorem Ipsum</h1>
+                    <div class="divider"></div>
+                    <h2>h2. Lorem Ipsum</h2>
+                    <div class="divider"></div>
+                    <h3>h3. Lorem Ipsum</h3>
+                    <div class="divider"></div>
+                    <h4>h4. Lorem Ipsum</h4>
+                    <div class="divider"></div>
+                    <h5>h5. Lorem Ipsum</h5>
+                    <div class="divider"></div>
+                    <h6>h6. Lorem Ipsum</h6>
                 </div>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2509class%253D%2522responsive-img%2522%250A%2509src%253D%2522..%252Fimage-url%2522%250A%2509alt%253D%2522%2522%250A%252F%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=740&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch1%253Eh1.%2520Lorem%2520Ipsum%253C%252Fh1%253E%250A%250A%253Ch2%253Eh2.%2520Lorem%2520Ipsum%253C%252Fh2%253E%250A%250A%253Ch3%253Eh3.%2520Lorem%2520Ipsum%253C%252Fh3%253E%250A%250A%253Ch4%253Eh4.%2520Lorem%2520Ipsum%253C%252Fh4%253E%250A%250A%253Ch5%253Eh5.%2520Lorem%2520Ipsum%253C%252Fh5%253E%250A%250A%253Ch6%253Eh6.%2520Lorem%2520Ipsum%253C%252Fh6%253E"
                     style="
-                        width: 700px;
-                        height: 200px;
+                        width: 100%;
+                        height: 335px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
+                        
                     "
                     loading="lazy"
                     class="dark hidden"
@@ -291,10 +288,10 @@
                 </iframe>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2509class%253D%2522responsive-img%2522%250A%2509src%253D%2522..%252Fimage-url%2522%250A%2509alt%253D%2522%2522%250A%252F%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch1%253Eh1.%2520Lorem%2520Ipsum%253C%252Fh1%253E%250A%250A%253Ch2%253Eh2.%2520Lorem%2520Ipsum%253C%252Fh2%253E%250A%250A%253Ch3%253Eh3.%2520Lorem%2520Ipsum%253C%252Fh3%253E%250A%250A%253Ch4%253Eh4.%2520Lorem%2520Ipsum%253C%252Fh4%253E%250A%250A%253Ch5%253Eh5.%2520Lorem%2520Ipsum%253C%252Fh5%253E%250A%250A%253Ch6%253Eh6.%2520Lorem%2520Ipsum%253C%252Fh6%253E%250A""
                     style="
-                        width: 700px;
-                        height: 200px;
+                        width: 100%;
+                        height: 335px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -306,30 +303,31 @@
 
                 <div class="divider"></div>
 
-                <div class="content-head">Round Image</div>
+                <div class="content-head">Center Text</div>
                 <p class="content-details">
-                    Round Images are the circular, with a default dimension of
-                    160px × 160px.
+                    We can set the text alignment to center by adding a class
+                    'center-text' to it.
                 </p>
 
-                <div class="examples-container">
-                    <img
-                        src="../../assets/images/pic1.jfif"
-                        alt="rounded image"
-                        class="round-img"
-                    />
-                    <img
-                        src="../../assets/images/pic2.jfif"
-                        alt="rounded image"
-                        class="round-img"
-                    />
+                <div class="example-container">
+                    <h1 class="center-text">h1. Lorem Ipsum</h1>
+                    <div class="divider"></div>
+                    <h2 class="center-text">h2. Lorem Ipsum</h2>
+                    <div class="divider"></div>
+                    <h3 class="center-text">h3. Lorem Ipsum</h3>
+                    <div class="divider"></div>
+                    <h4 class="center-text">h4. Lorem Ipsum</h4>
+                    <div class="divider"></div>
+                    <h5 class="center-text">h5. Lorem Ipsum</h5>
+                    <div class="divider"></div>
+                    <h6 class="center-text">h6. Lorem Ipsum</h6>
                 </div>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520%2520%2520class%253D%2522round-img%2522%250A%2509src%253D%2522..%252F..%252Fassets%252Fimages%252Fpic1.jfif%2522%250A%2509alt%253D%2522rounded%2520image%2522%250A%252F%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522center-text%2522%253Eh1.%2520Lorem%2520Ipsum%253C%252Fh1%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch2%2520class%253D%2522center-text%2522%253Eh2.%2520Lorem%2520Ipsum%253C%252Fh2%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch3%2520class%253D%2522center-text%2522%253Eh3.%2520Lorem%2520Ipsum%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch4%2520class%253D%2522center-text%2522%253Eh4.%2520Lorem%2520Ipsum%253C%252Fh4%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch5%2520class%253D%2522center-text%2522%253Eh5.%2520Lorem%2520Ipsum%253C%252Fh5%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch6%2520class%253D%2522center-text%2522%253Eh6.%2520Lorem%2520Ipsum%253C%252Fh6%253E"
                     style="
                         width: 700px;
-                        height: 200px;
+                        height: 322px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -341,10 +339,10 @@
                 </iframe>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520%2520%2520class%253D%2522round-img%2522%250A%2509src%253D%2522..%252F..%252Fassets%252Fimages%252Fpic1.jfif%2522%250A%2509alt%253D%2522rounded%2520image%2522%250A%252F%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522center-text%2522%253Eh1.%2520Lorem%2520Ipsum%253C%252Fh1%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch2%2520class%253D%2522center-text%2522%253Eh2.%2520Lorem%2520Ipsum%253C%252Fh2%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch3%2520class%253D%2522center-text%2522%253Eh3.%2520Lorem%2520Ipsum%253C%252Fh3%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch4%2520class%253D%2522center-text%2522%253Eh4.%2520Lorem%2520Ipsum%253C%252Fh4%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch5%2520class%253D%2522center-text%2522%253Eh5.%2520Lorem%2520Ipsum%253C%252Fh5%253E%250A%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%253Ch6%2520class%253D%2522center-text%2522%253Eh6.%2520Lorem%2520Ipsum%253C%252Fh6%253E"
                     style="
                         width: 700px;
-                        height: 200px;
+                        height: 322px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -357,11 +355,14 @@
                 <div class="divider"></div>
 
                 <div class="nav-btns">
-                    <a href="../card/card.html" class="prev">&lt; Card</a>
-                    <a href="../input/input.html" class="next">Input &gt;</a>
+                    <a href="../input/input.html" class="prev">&lt; Input</a>
+                    <a href="" class="next">Lists &gt;</a>
                 </div>
             </div>
         </div>
+
+        <!-- ======= INPUT JS ======== -->
+        <script src="./input.js"></script>
 
         <!-- ======== MAIN JS ======== -->
         <script defer src="/scripts/main.js"></script>
