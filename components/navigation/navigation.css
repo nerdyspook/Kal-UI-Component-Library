@@ -62,10 +62,10 @@
     padding-right: var(--sp-0-75);
 }
 
-.kal_nav_item a {
+.kal_nav_item .kal_nav_link {
     color: var(--default-color);
 }
-.kal_nav_item a:hover {
+.kal_nav_item .kal_nav_link:hover {
     font-weight: var(--font-medium);
 }
 
