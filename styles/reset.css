@@ -75,6 +75,8 @@
 
     /* =========== Z Index ========== */
     --z-fixed: 100;
+    --z-modal-back: 1000;
+    --z-modal: 10000;
 }
 
 /* Responsive Typography */

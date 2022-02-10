@@ -1,0 +1,117 @@
+.show-modal {
+    color: var(--white-color);
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: var(--sp-1-5);
+    font-size: var(--biggest-font-size);
+    color: var(--default-color);
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.modal-heading {
+    color: var(--default-color);
+    font-size: var(--big-font-size);
+    margin-bottom: var(--sp-2);
+}
+
+.modal-details {
+    color: var(--default-color);
+    font-size: var(--h3-font-size);
+}
+
+/* Classes to make modal work */
+
+.modal {
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
+    background-color: var(--white-color);
+    padding: var(--sp-2);
+    border-radius: var(--sp-1);
+    box-shadow: 0 6rem 10rem rgba(0, 0, 0, 0.6);
+    z-index: var(--z-modal);
+
+    overflow: hidden;
+}
+
+.modal-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: var(--zmodal-back);
+}
+
+.modal-content {
+    background-color: var(--white-color);
+    padding: var(--sp-5);
+    border-radius: 1rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1024px) {
+    .modal-heading {
+        font-size: var(--big-font-size);
+    }
+
+    .modal-details {
+        font-size: var(--h3-font-size);
+    }
+
+    .code-head {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 70%;
+        padding: var(--sp-2-5);
+    }
+
+    .close-modal {
+        font-size: var(--big-font-size);
+        right: var(--sp-1);
+    }
+
+    .modal-heading {
+        font-size: var(--h1-font-size);
+        margin-bottom: var(--sp-1-5);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .modal {
+        padding: var(--sp-1-5);
+    }
+
+    .modal-heading {
+        font-size: var(--h2-font-size);
+    }
+
+    .modal-details {
+        font-size: var(--normal-font-size);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .modal-heading {
+        margin-bottom: var(--sp-0-5);
+    }
+
+    .modal-details {
+        font-size: var(--small-font-size);
+    }
+}
