@@ -1,0 +1,93 @@
+.navigation_container {
+    width: 100%;
+    height: var(--sp-4);
+}
+
+.kal_header {
+    max-width: 100%;
+    max-height: 100%;
+    background: var(--white-color);
+}
+
+.kal_nav {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kal_nav_logo,
+.kal_nav_toggle,
+.kal_nav_shop,
+.kal_nav_close {
+    color: var(--default-color);
+}
+
+.kal_nav_logo {
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    padding: 0 var(--sp-1);
+    display: inline-flex;
+    align-items: center;
+    column-gap: var(--sp-0-25);
+}
+
+.kal_nav_btns {
+    padding-right: var(--sp-1);
+
+    display: flex;
+    align-items: center;
+    column-gap: var(--sp-1);
+}
+
+.kal_nav_logo-icon,
+.kal_nav_toggle,
+.kal_nav_shop,
+.kal_nav_user {
+    font-size: var(--sp-1-5);
+    cursor: pointer;
+}
+
+.kal_nav_menu {
+    width: 100%;
+}
+
+.kal_nav_list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kal_nav_item {
+    padding-right: var(--sp-0-75);
+}
+
+.kal_nav_item a {
+    color: var(--default-color);
+}
+.kal_nav_item a:hover {
+    font-weight: var(--font-medium);
+}
+
+.kal_nav_toggle {
+    display: none;
+}
+
+@media screen and (max-width: 340px) {
+    .kal_nav_logo-icon,
+    .kal_nav_wishlist,
+    .kal_nav_shop,
+    .kal_nav_user {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kal_nav_menu {
+        display: none;
+    }
+
+    .kal_nav_toggle {
+        display: block;
+    }
+}
