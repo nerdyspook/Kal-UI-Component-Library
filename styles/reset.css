@@ -143,6 +143,9 @@ button {
     cursor: pointer;
     outline: none;
 }
+button:active {
+    transform: scale(0.98);
+}
 
 .hidden {
     display: none;
