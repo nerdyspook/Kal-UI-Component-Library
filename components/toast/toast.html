@@ -18,10 +18,20 @@
             crossorigin="anonymous"
         ></script>
 
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+            integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+            crossorigin="anonymous"
+        />
+
+        <!-- ========================== Boxicons ========================= -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
         <!-- ============================= CSS =========================== -->
         <link rel="stylesheet" href="../../styles/style.css" />
         <link rel="stylesheet" href="../../styles/documentation.css" />
-        <link rel="stylesheet" href="../button/button.css" />
+        <link rel="stylesheet" href="../toast/toast.css" />
 
         <title>Kal UI</title>
     </head>
@@ -86,12 +96,10 @@
                                 <a href="../alert/alert.html">Alert</a>
                             </li>
                             <li>
-                                <a href="../button/button.html">Badge</a>
+                                <a href="../badge/badge.html">Badge</a>
                             </li>
                             <li>
-                                <a class="active" href="./button.html"
-                                    >Button</a
-                                >
+                                <a href="../button/button.html">Button</a>
                             </li>
                             <li>
                                 <a href="../card/card.html">Card</a>
@@ -111,7 +119,9 @@
                                 <a href="../lists/lists.html">Lists</a>
                             </li>
                             <li>
-                                <a href="../navigation/navigation.html"
+                                <a
+                                    class="active"
+                                    href="../navigation/navigation.html"
                                     >Navigation</a
                                 >
                             </li>
@@ -122,7 +132,7 @@
                                 <a href="../rating/rating.html">Rating</a>
                             </li>
                             <li>
-                                <a href="../toast/toast.html">Toast</a>
+                                <a class="active" href="./toast.html">Toast</a>
                             </li>
                             <li>
                                 <a href="">Grid</a>
@@ -200,7 +210,7 @@
                             <a href="../badge/badge.html">Badge</a>
                         </li>
                         <li>
-                            <a class="active" href="./button.html">Button</a>
+                            <a href="../button/button.html">Button</a>
                         </li>
                         <li>
                             <a href="../card/card.html">Card</a>
@@ -231,7 +241,7 @@
                             <a href="../rating/rating.html">Rating</a>
                         </li>
                         <li>
-                            <a href="../toast/toast.html">Toast</a>
+                            <a class="active" href="./toast.html">Toast</a>
                         </li>
                         <li>
                             <a href="">Grid</a>
@@ -245,19 +255,16 @@
 
             <!-- ===================== Content ==================== -->
             <div class="content">
-                <div class="content-title">Button</div>
+                <div class="content-title">Toast</div>
                 <p class="content-details">
-                    Buttons allow users to take actions, and make choices, with
-                    a single tap. <br /><br />
-                    Buttons communicate actions that users can take. They are
-                    typically placed throughout your UI, in places like:
+                    Toasts provide brief notifications. The component is also
+                    known as a snackbar. <br /><br />
+                    The toast is used to show alerts on top of an overlay. The
+                    toast will close itself when the close button is clicked, or
+                    after a timeout — the default is 2 seconds. The toast
+                    component is used to give feedback to users after an action
+                    has taken place.
                 </p>
-                <ul>
-                    <li class="list-item">Modal Windows</li>
-                    <li class="list-item">Cards</li>
-                    <li class="list-item">Forms</li>
-                    <li class="list-item">Toolbars</li>
-                </ul>
 
                 <ul class="hidden-code">
                     <li>
@@ -268,29 +275,29 @@
 
                 <div class="divider"></div>
 
-                <div class="content-head">Primary Button</div>
+                <div class="content-head">Usage</div>
                 <p class="content-details">
-                    The Button comes with three variants: Text | Contained |
-                    Outlined
+                    You can add this HTML code and Javascript code to get a
+                    toast in your website. You can click on the "SHOW TOAST"
+                    button for live demo.
                 </p>
 
                 <div class="examples-container">
-                    <button type="button" class="btn btn-text">Text</button>
-
-                    <button type="button" class="btn btn-contained">
-                        Contained
-                    </button>
-
-                    <button type="button" class="btn btn-outlined">
-                        Outlined
-                    </button>
+                    <button class="btn show-toast">Show Toast</button>
                 </div>
 
+                <div class="content-head code-head">HTML</div>
+                <p class="content-details">
+                    You need to put this HTML code at the bottom just before
+                    closing the &lt;body&gt; tag.
+                </p>
+                <!-- ============ HTML CODE ============= -->
+
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-text%2522%253EText%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-contained%2522%253EContained%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outlined%2522%253EOutlined%253C%252Fbutton%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522content-head%2520code-head%2522%253EHTML%253C%252Fdiv%253E%250A"
                     style="
                         width: 700px;
-                        height: 200px;
+                        height: 131px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -302,10 +309,10 @@
                 </iframe>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-text%2522%253EText%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-contained%2522%253EContained%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outlined%2522%253EOutlined%253C%252Fbutton%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522content-head%2520code-head%2522%253EHTML%253C%252Fdiv%253E%250A"
                     style="
                         width: 700px;
-                        height: 200px;
+                        height: 131px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -315,25 +322,14 @@
                 >
                 </iframe>
 
-                <div class="divider"></div>
-
-                <div class="content-head">Link Button</div>
-                <p class="content-details">
-                    The Link Button is used to attach a link action, at a button
-                    tap.
-                </p>
-
-                <div class="examples-container">
-                    <button type="button" class="btn btn-contained">
-                        <a href="/">Link</a>
-                    </button>
-                </div>
+                <div class="content-head code-head">Javascript</div>
+                <!-- ============ JS CODE ============= -->
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-contained%2522%253E%250A%2509%253Ca%2520href%253D%2522%252F%2522%253ELink%253C%252Fa%253E%250A%253C%252Fbutton%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=javascript&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=const%2520body%2520%253D%2520document.querySelector%28%2522body%2522%29%253B%250Aconst%2520toastBtn%2520%253D%2520document.querySelector%28%2522.show-toast%2522%29%253B%250Aconst%2520toasts%2520%253D%2520document.querySelector%28%2522%2523toasts%2522%29%253B%250A%250Aconst%2520createNotification%2520%253D%2520%28seconds%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520const%2520notification%2520%253D%2520%2560%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2522%2520id%253D%2522toast%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2520close%2522%2520id%253D%2522success-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2560%253B%250A%2520%2520%2520%2520toasts.innerHTML%2520%253D%2520notification%253B%250A%2520%2520%2520%2520const%2520toast%2520%253D%2520document.querySelector%28%2522%2523toast%2522%29%253B%250A%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toast.remove%28%29%253B%250A%2520%2520%2520%2520%257D%252C%2520seconds%2520*%25201000%29%253B%250A%257D%253B%250A%250AtoastBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520createNotification%282%29%253B%250A%2520%2520%2520%2520const%2520closeBtn%2520%253D%2520document.querySelectorAll%28%2522.close-btn%2522%29%253B%250A%250A%2520%2520%2520%2520closeBtn.forEach%28%28btn%29%2520%253D%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520btn.addEventListener%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522click%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28%29%2520%253D%253E%2520%28btn.parentElement.style.display%2520%253D%2520%2522none%2522%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%29%250A%2520%2520%2520%2520%29%253B%250A%257D%29%250A%250A"
                     style="
                         width: 700px;
-                        height: 157px;
+                        height: 966px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -345,105 +341,10 @@
                 </iframe>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-contained%2522%253E%250A%2509%253Ca%2520href%253D%2522%252F%2522%253ELink%253C%252Fa%253E%250A%253C%252Fbutton%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=javascript&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=const%2520body%2520%253D%2520document.querySelector%28%2522body%2522%29%253B%250Aconst%2520toastBtn%2520%253D%2520document.querySelector%28%2522.show-toast%2522%29%253B%250Aconst%2520toasts%2520%253D%2520document.querySelector%28%2522%2523toasts%2522%29%253B%250A%250Aconst%2520createNotification%2520%253D%2520%28seconds%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520const%2520notification%2520%253D%2520%2560%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2522%2520id%253D%2522toast%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2520close%2522%2520id%253D%2522success-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522text-link%2522%253Echeck%2520it%2520out%21%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2560%253B%250A%2520%2520%2520%2520toasts.innerHTML%2520%253D%2520notification%253B%250A%2520%2520%2520%2520const%2520toast%2520%253D%2520document.querySelector%28%2522%2523toast%2522%29%253B%250A%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toast.remove%28%29%253B%250A%2520%2520%2520%2520%257D%252C%2520seconds%2520*%25201000%29%253B%250A%257D%253B%250A%250AtoastBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520createNotification%282%29%253B%250A%2520%2520%2520%2520const%2520closeBtn%2520%253D%2520document.querySelectorAll%28%2522.close-btn%2522%29%253B%250A%250A%2520%2520%2520%2520closeBtn.forEach%28%28btn%29%2520%253D%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520btn.addEventListener%28%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522click%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28%29%2520%253D%253E%2520%28btn.parentElement.style.display%2520%253D%2520%2522none%2522%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%29%250A%2520%2520%2520%2520%29%253B%250A%257D%29%250A%250A"
                     style="
                         width: 700px;
-                        height: 157px;
-                        border: 0;
-                        transform: scale(1);
-                        overflow: hidden;
-                    "
-                    loading="lazy"
-                    sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-
-                <div class="divider"></div>
-
-                <div class="content-head">Icon Button</div>
-                <p class="content-details">
-                    Sometimes you might want to have icons for certain buttons
-                    to enhance the UX of the application as we recognize logos
-                    more easily than plain text. For example, if you have a
-                    delete button you can label it with a dustbin icon.
-                </p>
-
-                <div class="examples-container">
-                    <button type="button" class="btn btn-outlined left-icon">
-                        <i class="fas fa-trash"></i>
-                        Delete
-                    </button>
-
-                    <button type="button" class="btn btn-contained right-icon">
-                        Send
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outlined%2520left-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2509Delete%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-contained%2520right-icon%2522%253E%250A%2509Send%250A%2509%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A"
-                    style="
-                        width: 700px;
-                        height: 285px;
-                        border: 0;
-                        transform: scale(1);
-                        overflow: hidden;
-                    "
-                    loading="lazy"
-                    class="dark hidden"
-                    sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outlined%2520left-icon%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2509Delete%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-contained%2520right-icon%2522%253E%250A%2509Send%250A%2509%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A"
-                    style="
-                        width: 700px;
-                        height: 285px;
-                        border: 0;
-                        transform: scale(1);
-                        overflow: hidden;
-                    "
-                    loading="lazy"
-                    sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-
-                <div class="divider"></div>
-
-                <div class="content-head">Floating Action Button</div>
-                <p class="content-details">
-                    Floating-action buttons can be customized by adding the
-                    font-awesome icon of your choice. This button will be fixed
-                    to right-bottom corner.
-                </p>
-
-                <div class="examples-container">
-                    <button type="button" class="btn btn-float-action rounded">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </div>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-float-action%2520rounded%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A"
-                    style="
-                        width: 700px;
-                        height: 157px;
-                        border: 0;
-                        transform: scale(1);
-                        overflow: hidden;
-                    "
-                    loading="lazy"
-                    class="dark hidden"
-                    sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-float-action%2520rounded%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A"
-                    style="
-                        width: 700px;
-                        height: 157px;
+                        height: 966px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -456,11 +357,16 @@
                 <div class="divider"></div>
 
                 <div class="nav-btns">
-                    <a href="../badge/badge.html" class="prev">&lt; Badge</a>
-                    <a href="../card/card.html" class="next">Card &gt;</a>
+                    <a href="../modal/modal.html" class="prev">&lt; Modal</a>
+                    <a href="" class="next">Toast &gt;</a>
                 </div>
             </div>
         </div>
+
+        <div id="toasts" class="toasts"></div>
+
+        <!-- ======= TOAST JS ======= -->
+        <script src="./toast.js"></script>
 
         <!-- ======== MAIN JS ======== -->
         <script defer src="/scripts/main.js"></script>
