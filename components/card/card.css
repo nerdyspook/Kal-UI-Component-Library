@@ -74,12 +74,13 @@
 }
 
 .horizontal {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .horizontal .card-img {
+    object-fit: cover;
     margin: 0;
     height: 100%;
     max-width: 10rem;

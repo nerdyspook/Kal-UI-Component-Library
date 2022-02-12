@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- =========================== Favicon ========================= -->
+        <link
+            rel="shortcut icon"
+            href="/assets/images/favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- ======================== Font Awesome ======================= -->
+        <script
+            src="https://kit.fontawesome.com/04cdd1a366.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+            integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+            crossorigin="anonymous"
+        />
+
+        <!-- ========================== Boxicons ========================= -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+        <!-- ============================= CSS =========================== -->
+        <link rel="stylesheet" href="../../styles/style.css" />
+        <link rel="stylesheet" href="../../styles/documentation.css" />
+        <link rel="stylesheet" href="../grid/grid.css" />
+
+        <title>Kal UI</title>
+    </head>
+    <body>
+        <!-- =========================== Header ========================== -->
+        <header class="header container" id="header">
+            <nav class="nav">
+                <a href="/index.html" class="nav__logo">Kal UI</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="/pages/documentation.html"
+                                class="nav__link"
+                                >Documentation</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="nested-list">
+                        <div class="list-topic nav__item">
+                            <a href="/"> Getting Started</a>
+                        </div>
+
+                        <ul class="list-subtopic">
+                            <li>
+                                <a href="../../pages/documentation.html"
+                                    >Introduction</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../../pages/colors.html">Colors</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/typography.html"
+                                    >Typography</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../../pages/conclusion.html"
+                                    >Conclusion</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ============= Components List ============ -->
+                    <div class="nested-list">
+                        <div class="list-topic nav__item">
+                            <a href="">Components</a>
+                        </div>
+
+                        <ul class="list-subtopic">
+                            <li>
+                                <a href="../avatar/avatar.html">Avatar</a>
+                            </li>
+                            <li>
+                                <a href="../alert/alert.html">Alert</a>
+                            </li>
+                            <li>
+                                <a href="../badge/badge.html">Badge</a>
+                            </li>
+                            <li>
+                                <a href="../button/button.html">Button</a>
+                            </li>
+                            <li>
+                                <a href="../card/card.html">Card</a>
+                            </li>
+                            <li>
+                                <a href="../image/image.html">Image</a>
+                            </li>
+                            <li>
+                                <a href="../input/input.html">Input</a>
+                            </li>
+                            <li>
+                                <a href="../text-utilities/text-util.html"
+                                    >Text Utilities</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../lists/lists.html">Lists</a>
+                            </li>
+                            <li>
+                                <a
+                                    class="active"
+                                    href="../navigation/navigation.html"
+                                    >Navigation</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../modal/modal.html">Modal</a>
+                            </li>
+                            <li>
+                                <a href="../rating/rating.html">Rating</a>
+                            </li>
+                            <li>
+                                <a href="../toast/toast.html">Toast</a>
+                            </li>
+                            <li>
+                                <a class="active" href="./grid.html">Grid</a>
+                            </li>
+                            <li>
+                                <a href="">Slider</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <a
+                        href="https://github.com/nerdyspook/Kal-UI-Component-Library"
+                        target="_blank"
+                    >
+                        <i class="fab fa-github" id="github-btn"></i>
+                    </a>
+
+                    <!-- Theme change -->
+                    <i class="fas fa-moon change-theme" id="theme-btn"></i>
+
+                    <!-- Menu Buttons -->
+                    <div class="nav__close hidden" id="nav-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ============================ Main =========================== -->
+        <div class="main container">
+            <!-- ========================== Sidebar ========================== -->
+            <div class="sidebar hidden">
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="/"> Getting Started</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="../../pages/documentation.html"
+                                >Introduction</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../pages/colors.html">Colors</a>
+                        </li>
+                        <li>
+                            <a href="../../pages/typography.html">Typography</a>
+                        </li>
+                        <li>
+                            <a href="../../pages/conclusion.html">Conclusion</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ============= Components List ============ -->
+                <div class="sidebar-nested-list">
+                    <div class="list-topic nav__item">
+                        <a href="">Components</a>
+                    </div>
+
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="../avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="../alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="../badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="../button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="../card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="../image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="../input/input.html">Input</a>
+                        </li>
+                        <li>
+                            <a href="../text-utilities/text-util.html"
+                                >Text Utilities</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../lists/lists.html">Lists</a>
+                        </li>
+                        <li>
+                            <a href="../navigation/navigation.html"
+                                >Navigation</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../modal/modal.html">Modal</a>
+                        </li>
+                        <li>
+                            <a href="../rating/rating.html">Rating</a>
+                        </li>
+                        <li>
+                            <a href="../toast/toast.html">Toast</a>
+                        </li>
+                        <li>
+                            <a class="active" href="./grid.html">Grid</a>
+                        </li>
+                        <li>
+                            <a href="">Slider</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ===================== Content ==================== -->
+            <div class="content">
+                <div class="content-title">Grid</div>
+                <p class="content-details">
+                    The grid creates visual consistency between layouts while
+                    allowing flexibility across a wide variety of designs.
+                </p>
+
+                <ul class="hidden-code">
+                    <li>
+                        In order to view the code you need to visit using a
+                        device with larger screen.
+                    </li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <div class="content-head">Two Column Grid</div>
+                <p class="content-details">
+                    To create a two colum grid add .grid class to parent
+                    container div and arrange it according to your need with
+                    below utility classes.
+                </p>
+                <ul>
+                    <li class="list-item">
+                        col-2-left-expand: To divide a row into 2 columns where
+                        left column is stretched.
+                    </li>
+                    <li class="list-item">
+                        col-2-even: To evenly divide a row into 2 columns.
+                    </li>
+                    <li class="list-item">
+                        col-2-right-expand: To divide a row into 2 columns where
+                        right column is stretched.
+                    </li>
+                </ul>
+
+                <div class="examples-container">
+                    <div class="grid col-2-left-expand">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-2-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-2-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="grid col-2-even">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-2-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-2-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="grid col-2-right-expand">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-2-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-2-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520grid%2520row%2520divided%2520in%2520two%2520column%2520where%2520left%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-2-left-expand%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2509%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520two%2520even%2520column%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-2-even%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520two%2520column%2520where%2520right%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-2-right-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 519px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    class="dark hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520grid%2520row%2520divided%2520in%2520two%2520column%2520where%2520left%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-2-left-expand%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2509%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520two%2520even%2520column%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-2-even%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520two%2520column%2520where%2520right%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-2-right-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 519px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <div class="divider"></div>
+
+                <div class="content-head">Three Column Grid</div>
+                <p class="content-details">
+                    To create a three colum grid add .grid class to parent
+                    container div and arrange it according to your need with
+                    below utility classes.
+                </p>
+                <ul>
+                    <li class="list-item">
+                        col-3-even : To evenly divide a row into 3 columns.
+                    </li>
+                    <li class="list-item">
+                        col-3-left-expand : To divide a row into 3 columns where
+                        left column is stretched.
+                    </li>
+                    <li class="list-item">
+                        col-3-mid-expand : To divide a row into 3 columns where
+                        middle column is stretched.
+                    </li>
+                    <li class="list-item">
+                        col-3-right-expand : To divide a row into 3 columns
+                        where right column is stretched.
+                    </li>
+                </ul>
+
+                <div class="examples-container">
+                    <div class="grid col-3-even">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="grid col-3-left-expand">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="grid col-3-mid-expand">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="grid col-3-right-expand">
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card img horizontal">
+                            <img
+                                class="grid-card-img"
+                                src="../../assets/images/ipad.png"
+                                alt="card image"
+                            />
+
+                            <div class="card-details">
+                                <div class="heading">
+                                    <h4>iPad Pro 12.9"</h4>
+                                    <h6>Apple</h6>
+                                </div>
+
+                                <p>
+                                    12.9-inch Liquid Retina display with
+                                    ProMotion A12Z Bionic chip
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520even%2520columns%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-even%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520columns%2520where%2520left%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-left-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520columns%2520where%2520middle%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-mid-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520columns%2520where%2520right%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-right-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A"
+                    style="
+                        width: 700px;
+                        height: 689px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    class="dark hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520even%2520columns%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-even%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520columns%2520where%2520left%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-left-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520columns%2520where%2520middle%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-mid-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520grid%2520row%2520divided%2520in%2520three%2520columns%2520where%2520right%2520column%2520is%2520stretched%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520col-3-right-expand%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B...%257D%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A"
+                    style="
+                        width: 700px;
+                        height: 689px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <div class="divider"></div>
+
+                <div class="nav-btns">
+                    <a href="../toast/toast.html" class="prev">&lt; Toast</a>
+                    <a href="" class="next">Slider &gt;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="toasts" class="toasts"></div>
+
+        <!-- ======= TOAST JS ======= -->
+        <script src="./toast.js"></script>
+
+        <!-- ======== MAIN JS ======== -->
+        <script defer src="/scripts/main.js"></script>
+    </body>
+</html>
