@@ -18,10 +18,20 @@
             crossorigin="anonymous"
         ></script>
 
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+            integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+            crossorigin="anonymous"
+        />
+
+        <!-- ========================== Boxicons ========================= -->
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
         <!-- ============================= CSS =========================== -->
         <link rel="stylesheet" href="../../styles/style.css" />
         <link rel="stylesheet" href="../../styles/documentation.css" />
-        <link rel="stylesheet" href="../badge/badge.css" />
+        <link rel="stylesheet" href="../slider/slider.css" />
 
         <title>Kal UI</title>
     </head>
@@ -86,7 +96,7 @@
                                 <a href="../alert/alert.html">Alert</a>
                             </li>
                             <li>
-                                <a class="active" href="./badge.html">Badge</a>
+                                <a href="../badge/badge.html">Badge</a>
                             </li>
                             <li>
                                 <a href="../button/button.html">Button</a>
@@ -109,7 +119,9 @@
                                 <a href="../lists/lists.html">Lists</a>
                             </li>
                             <li>
-                                <a href="../navigation/navigation.html"
+                                <a
+                                    class="active"
+                                    href="../navigation/navigation.html"
                                     >Navigation</a
                                 >
                             </li>
@@ -126,7 +138,9 @@
                                 <a href="../grid/grid.html">Grid</a>
                             </li>
                             <li>
-                                <a href="../slider/slider.html">Slider</a>
+                                <a class="active" href="./slider.html"
+                                    >Slider</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -195,7 +209,7 @@
                             <a href="../alert/alert.html">Alert</a>
                         </li>
                         <li>
-                            <a class="active" href="./badge.html">Badge</a>
+                            <a href="../badge/badge.html">Badge</a>
                         </li>
                         <li>
                             <a href="../button/button.html">Button</a>
@@ -235,7 +249,7 @@
                             <a href="../grid/grid.html">Grid</a>
                         </li>
                         <li>
-                            <a href="../slider/slider.html">Slider</a>
+                            <a class="active" href="./slider.html">Slider</a>
                         </li>
                     </ul>
                 </div>
@@ -243,12 +257,15 @@
 
             <!-- ===================== Content ==================== -->
             <div class="content">
-                <div class="content-title">Badge</div>
+                <div class="content-title">Slider</div>
                 <p class="content-details">
-                    Badges are small circles, positioned either at top-right |
-                    top-left | bottom-right | bottom-left of the parent
-                    component. Badge can be used to display numbers, online /
-                    offline status, depending on where they are used.
+                    The Slider is used to allow users to make selections from a
+                    range of values. <br />
+                    <br />
+                    Sliders reflect a range of values along a bar, from which
+                    users may select a single value. They are ideal for
+                    adjusting settings such as volume, brightness, or applying
+                    image filters.
                 </p>
 
                 <ul class="hidden-code">
@@ -260,47 +277,32 @@
 
                 <div class="divider"></div>
 
-                <div class="content-head">Badge on Avatars</div>
+                <div class="content-head">Continuous Sliders</div>
                 <p class="content-details">
-                    Badge on a Avatar is used to show the current status of a
-                    user. <br />
-                    It can be used with 3 variants: Online | Offline | DND
+                    Continuous sliders allow users to select a value along a
+                    subjective range.
                 </p>
 
                 <div class="examples-container">
-                    <div class="badge">
-                        <img
-                            class="avatar rounded"
-                            src="../../assets/images/Face5.jpg"
-                            alt=""
+                    <div class="slider">
+                        <i class="fa-solid fa-volume-low slider-icon"></i>
+                        <input
+                            type="range"
+                            class="volume"
+                            id="volume"
+                            min="0"
+                            max="100"
+                            value="30"
                         />
-                        <div class="online rounded top-right"></div>
-                    </div>
-
-                    <div class="badge">
-                        <img
-                            class="avatar rounded"
-                            src="../../assets/images/Face4.jpg"
-                            alt=""
-                        />
-                        <div class="offline rounded top-right"></div>
-                    </div>
-
-                    <div class="badge">
-                        <img
-                            class="avatar rounded"
-                            src="../../assets/images/Face3.jpg"
-                            alt=""
-                        />
-                        <div class="dnd rounded top-right"></div>
+                        <i class="fa-solid fa-volume-high slider-icon"></i>
                     </div>
                 </div>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Cimg%2520class%253D%2522avatar%2520rounded%2522%2520src%253D%2522..%252F..%252Fassets%252Fimages%252FFace5.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522online%2520rounded%2520top-right%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Cimg%2520class%253D%2522avatar%2520rounded%2522%2520src%253D%2522..%252F..%252Fassets%252Fimages%252FFace4.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522offline%2520rounded%2520top-right%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Cimg%2520class%253D%2522avatar%2520rounded%2522%2520src%253D%2522..%252F..%252Fassets%252Fimages%252FFace3.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522dnd%2520rounded%2520top-right%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider%2522%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-volume-low%2520slider-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522volume%2522%2520id%253D%2522volume%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520%2509%2509%2509value%253D%252230%2522%252F%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-volume-high%2520slider-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
                     style="
                         width: 700px;
-                        height: 391px;
+                        height: 221px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -312,10 +314,10 @@
                 </iframe>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Cimg%2520class%253D%2522avatar%2520rounded%2522%2520src%253D%2522..%252F..%252Fassets%252Fimages%252FFace5.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522online%2520rounded%2520top-right%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Cimg%2520class%253D%2522avatar%2520rounded%2522%2520src%253D%2522..%252F..%252Fassets%252Fimages%252FFace4.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522offline%2520rounded%2520top-right%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Cimg%2520class%253D%2522avatar%2520rounded%2522%2520src%253D%2522..%252F..%252Fassets%252Fimages%252FFace3.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2509%253Cdiv%2520class%253D%2522dnd%2520rounded%2520top-right%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider%2522%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-volume-low%2520slider-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522volume%2522%2520id%253D%2522volume%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520%2509%2509%2509value%253D%252230%2522%252F%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-volume-high%2520slider-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
                     style="
                         width: 700px;
-                        height: 391px;
+                        height: 221px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -327,29 +329,43 @@
 
                 <div class="divider"></div>
 
-                <div class="content-head">Badge on Icons</div>
+                <div class="content-head">Discrete Sliders</div>
                 <p class="content-details">
-                    Badge on Icon is used to show the number of items present in
-                    the parent component.
+                    Discrete sliders can be adjusted to a specific value by
+                    referencing its value indicator.
                 </p>
 
                 <div class="examples-container">
-                    <div class="badge">
-                        <i class="fas fa-shopping-cart"></i>
-                        <div class="number rounded top-right">99</div>
-                    </div>
-
-                    <div class="badge">
-                        <i class="fas fa-envelope"></i>
-                        <div class="number dnd rounded top-right">99+</div>
+                    <div class="slider">
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="10"
+                            value="30"
+                            list="tickmarks"
+                        />
+                        <datalist id="tickmarks" class="tickmarks">
+                            <option value="0"></option>
+                            <option value="10"></option>
+                            <option value="20"></option>
+                            <option value="30"></option>
+                            <option value="40"></option>
+                            <option value="50"></option>
+                            <option value="60"></option>
+                            <option value="70"></option>
+                            <option value="80"></option>
+                            <option value="90"></option>
+                            <option value="100"></option>
+                        </datalist>
                     </div>
                 </div>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%253Cdiv%2520class%253D%2522number%2520rounded%2520top-right%2522%253E99%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2509%253Cdiv%2520class%253D%2522number%2520dnd%2520rounded%2520top-right%2522%253E99%252B%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider%2522%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520step%253D%252210%2522value%253D%252230%2522%2520%2509%2509%2509%2509%2509list%253D%2522tickmarks%2522%252F%253E%250A%2509%253Cdatalist%2520id%253D%2522tickmarks%2522%2520class%253D%2522tickmarks%2522%253E%250A%2509%2509%253Coption%2520value%253D%25220%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252210%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252220%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252230%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252240%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252250%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252260%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252270%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252280%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252290%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%2522100%2522%253E%253C%252Foption%253E%250A%2509%253C%252Fdatalist%253E%250A%253C%252Fdiv%253E%250A"
                     style="
                         width: 700px;
-                        height: 285px;
+                        height: 455px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -361,10 +377,64 @@
                 </iframe>
 
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%253Cdiv%2520class%253D%2522number%2520rounded%2520top-right%2522%253E99%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2509%253Cdiv%2520class%253D%2522number%2520dnd%2520rounded%2520top-right%2522%253E99%252B%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider%2522%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520step%253D%252210%2522value%253D%252230%2522%2520%2509%2509%2509%2509%2509list%253D%2522tickmarks%2522%252F%253E%250A%2509%253Cdatalist%2520id%253D%2522tickmarks%2522%2520class%253D%2522tickmarks%2522%253E%250A%2509%2509%253Coption%2520value%253D%25220%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252210%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252220%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252230%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252240%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252250%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252260%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252270%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252280%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%252290%2522%253E%253C%252Foption%253E%250A%2509%2509%253Coption%2520value%253D%2522100%2522%253E%253C%252Foption%253E%250A%2509%253C%252Fdatalist%253E%250A%253C%252Fdiv%253E%250A"
                     style="
                         width: 700px;
-                        height: 285px;
+                        height: 455px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <div class="divider"></div>
+
+                <div class="content-head">Vertical Sliders</div>
+                <p class="content-details">
+                    Vertical sliders are aligned vertically. You can add a class
+                    'vertical' to get the slider vertically.
+                </p>
+
+                <div class="warning-message"></div>
+
+                <div class="examples-container">
+                    <div class="slider vertical">
+                        <i class="fa-solid fa-plus slider-icon"></i>
+                        <input
+                            type="range"
+                            class="zoom"
+                            id="zoom"
+                            min="0"
+                            max="100"
+                            value="30"
+                        />
+                        <i class="fa-solid fa-minus slider-icon"></i>
+                    </div>
+                </div>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2826%2C32%2C44%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider%2520vertical%2522%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-plus%2520slider-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522zoom%2522%2520id%253D%2522zoom%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252230%2522%252F%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-minus%2520slider-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 200px;
+                        border: 0;
+                        transform: scale(1);
+                        overflow: hidden;
+                    "
+                    loading="lazy"
+                    class="dark hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28248%2C250%2C252%2C1%29&t=material&wt=none&l=htmlmixed&width=700&ds=false&dsyoff=6px&dsblur=34px&wc=true&wa=false&pv=7px&ph=6px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider%2520vertical%2522%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-plus%2520slider-icon%2522%253E%253C%252Fi%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522zoom%2522%2520id%253D%2522zoom%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252230%2522%252F%253E%250A%2509%253Ci%2520class%253D%2522fa-solid%2520fa-minus%2520slider-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+                    style="
+                        width: 700px;
+                        height: 200px;
                         border: 0;
                         transform: scale(1);
                         overflow: hidden;
@@ -377,11 +447,16 @@
                 <div class="divider"></div>
 
                 <div class="nav-btns">
-                    <a href="../alert/alert.html" class="prev">&lt; Alert</a>
-                    <a href="../button/button.html" class="next">Button &gt;</a>
+                    <a href="../grid/grid.html" class="prev">&lt; Grid</a>
+                    <a href="" class="next"></a>
                 </div>
             </div>
         </div>
+
+        <div id="toasts" class="toasts"></div>
+
+        <!-- ======= TOAST JS ======= -->
+        <script src="./toast.js"></script>
 
         <!-- ======== MAIN JS ======== -->
         <script defer src="/scripts/main.js"></script>
