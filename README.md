@@ -226,7 +226,7 @@ You can check out the various types of grids [here](https://kal-ui.netlify.app/c
 
 The Slider is used to allow users to make selections from a range of values. Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
 
-You can check out the simple slider [here](https://magnet-ui.netlify.app/docs/docs-components/components/slider.html)
+You can check out the simple slider [here](https://kal-ui.netlify.app/components/slider/slider.html)
 
 -   Continuous Sliders
 -   Discrete Sliders
