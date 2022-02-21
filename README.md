@@ -134,7 +134,7 @@ You can check out the various types of images [here](https://kal-ui.netlify.app/
 
 ### Input
 
-The Image component is used to display images. Image composes a div where you can add all the styles you want.
+Inputs are necessary for user interaction with the website. Inputs are used to take information from the user, and then send the data to the server.
 
 You can check out the various types of input [here](https://kal-ui.netlify.app/components/input/input.html)
 
@@ -171,9 +171,9 @@ You can check out the various types of list [here](https://kal-ui.netlify.app/co
 
 ### Navigation
 
-Lists are continuous, vertical indexes of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+A navigation bar appears at the top of an app screen, below the status bar, and enables navigation through a series of hierarchical screens.
 
-You can check out the various types of list [here](https://kal-ui.netlify.app/components/navigation/navigation.html)
+You can check out the simple responsive navigation bar [here](https://kal-ui.netlify.app/components/navigation/navigation.html)
 
 -   Responsive Navigation Bar
 
@@ -183,7 +183,7 @@ You can check out the various types of list [here](https://kal-ui.netlify.app/co
 
 A dialog is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is inert, meaning that users cannot interact with it.
 
-You can check out the various types of list [here](https://kal-ui.netlify.app/components/modal/modal.html)
+You can check out the simple modal [here](https://kal-ui.netlify.app/components/modal/modal.html)
 
 -   Simple modal
 
