@@ -1,6 +1,5 @@
 /* ========= Hero Section ========== */
 .hero {
-    /* margin-top: 9rem */
     padding-top: 3rem;
     height: 100vh;
 }
@@ -112,6 +111,11 @@
     font-size: var(--biggest-font-size);
     color: var(--title-color);
     margin: 0rem 1rem 4rem 1rem;
+}
+
+.btn.my-style {
+    color: black;
+    background-color: coral;
 }
 
 @media screen and (min-width: 768px) {
